@@ -10,6 +10,28 @@ ventana = Tk()
 ventana.geometry("720x480")
 ventana.title("Inicio")
 
+
+#Objeto Frame
+
+marcos = Frame(ventana, width=300, height=260)
+marcos.config(
+    bg="#3D85C6",
+    bd=12,
+    relief=RAISED
+)
+marcos.pack()
+marcos.pack_propagate(False)
+
+text_label = Label(marcos, text="Hola mundo")
+text_label.config(
+    bg="red",
+    font=("Ubuntu", 12),
+    relief=SOLID
+)
+text_label.pack(anchor=CENTER, fill=Y)
+
+
+
 imagen = Image.open("/home/alberto/Desarrollo/Python/Tkinter_Python/image/arch.jpg")
 render = ImageTk.PhotoImage(imagen)
 
@@ -31,8 +53,8 @@ texto2.config(
     cursor="clock"
 )
 
-texto.pack(side=LEFT, fill=X, expand=YES)
-texto2.pack(fill=Y, expand=YES)
+#texto.pack(side=LEFT, fill=Y, expand=YES)
+#texto2.pack(fill=Y, expand=YES)
 
 
 
