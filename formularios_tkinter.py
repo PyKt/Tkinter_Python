@@ -1,6 +1,6 @@
 from tkinter import *
 
-ventana = Tk()
+ventana = Tk() 
 ventana.geometry("450x250")
 ventana.title("Formulario")
 
@@ -10,6 +10,7 @@ encabezado.config(
     fg="white",
     bg="darkgray",
     font=("Ubuntu",15)
+    
 )
 encabezado.grid(row=0, column=0, columnspan=3 ,sticky=W)
 
