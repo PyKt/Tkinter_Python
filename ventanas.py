@@ -15,7 +15,7 @@ class Main:
         ventana = Tk()
 
         #Dimensiones de ventana
-        ventana.geometry("480x350")
+        ventana.geometry("980x650")
 
         #Titulo de ventana
         ventana.title("Hola mundo")
